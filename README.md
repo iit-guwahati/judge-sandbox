@@ -2,8 +2,7 @@
 A generic Makefile for small/medium project.
 
 # Project directory structure
- - Project Directory
-    - project/ 			-	Project folder
+ - project/ 			-	Project folder
     - project/src		- All .cpp files (sub folders also included)
     - project/inc		-	All .h files
     
