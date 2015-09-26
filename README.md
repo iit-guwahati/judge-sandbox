@@ -17,9 +17,9 @@ A generic Makefile for small/medium project.
 
 # Download:
 ```bash
-curl -sS https://raw.githubusercontent.com/znck/makefile/master/Makefile
+curl -sO https://raw.githubusercontent.com/znck/makefile/master/Makefile
 ```
 or
 ```bash
-curl -sS https://goo.gl/n2NCcD
+curl -sLS https://goo.gl/n2NCcD > Makefile
 ```
