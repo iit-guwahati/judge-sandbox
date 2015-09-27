@@ -40,7 +40,7 @@ CFLAGS :=  #-g -g3 -O2 -ggdb -m64 -Wall #-D debug=1
 LIB := 
 
 # Creating list of cpp files
-SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
+SOURCES := $(shell find $(SRCDIR) -type f -name "*.$(SRCEXT)")
 
 # Creating list of files to be built
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
