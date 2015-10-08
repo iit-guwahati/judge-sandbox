@@ -1,5 +1,5 @@
 #!/bin/bash
-# 
+#
 # Folder structure
 # project/ 			-	Project folder
 # project/src			- 	All .cpp files (sub folders also included)
@@ -8,7 +8,7 @@
 # make clean - to delete all output files
 # make build - to build only
 # make all   - to compile and link
-# make run   - to compile, link and run 
+# make run   - to compile, link and run
 #
 
 # This is the main compiler
@@ -36,8 +36,8 @@ SRCEXT := cpp
 # Compiler flags
 CFLAGS :=  #-g -g3 -O2 -ggdb -m64 -Wall #-D debug=1
 
-# Include libraries 
-LIB := 
+# Include libraries
+LIB :=
 
 # Creating list of cpp files
 SOURCES := $(shell find $(SRCDIR) -type f -name "*.$(SRCEXT)")
@@ -61,7 +61,7 @@ $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
 
 # Cleaning all files
 clean:
-	@echo "# Cleaning"; 
+	@echo "# Cleaning";
 	@$(RM) -r -v $(BUILDDIR) $(OUTPUT)
 	@echo ""
 
@@ -80,7 +80,7 @@ run: all
 
 .PHONY: clean
 
-.print: 
+.print:
 	@echo "# Building"
 
 help:
