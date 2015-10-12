@@ -28,7 +28,7 @@ BUILDDIR := build
 OUTPUT = bin
 
 # Target or Executible file
-TARGET := $(OUTPUT)/a.out
+TARGET := $(OUTPUT)/sandbox
 
 # Source file extension
 SRCEXT := cpp
